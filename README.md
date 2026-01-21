@@ -112,37 +112,48 @@ This kit is fully compatible with standard Claude Code (CLI).
 
 ## 🎮 Command Board: When to Use What
 
-| Goal | Command | Est. Time | Quality |
-|------|---------|-----------|---------|
-| **create a new product** from scratch | `/fullstack-idea` | 2-5 days | ⭐⭐⭐⭐⭐ |
-| **prototype** a quick idea | `/fullstack-idea --quick` | 2-8 hours | ⭐⭐⭐ |
-| **validate** if an idea is feasible | `/ralph-idea` | 10 mins | ⭐⭐⭐⭐ |
-| **execute** a task list (task.md) | `/ralph` | varies | varies |
-| **plan complex changes** (multi-perspective) | `/orchestrate` | 30 mins | ⭐⭐⭐⭐⭐ |
-| **add a feature** to existing app | `/enhance` | 1-4 hours | ⭐⭐⭐ |
-| **fix a bug** with root cause analysis | `/debug` | 15-30 mins | ⭐⭐⭐⭐ |
-| **ask a question** / explore options | `/brainstorm` | 5 mins | ⭐⭐⭐ |
-| **run tests** suite | `/test` | 5 mins | ⭐⭐⭐ |
-| **deploy** to production | `/deploy` | 10 mins | ⭐⭐⭐ |
+| Goal | Command |
+|------|---------|
+| **Create a new product** from scratch (Full Pipeline) | `/fullstack-idea` |
+| **Prototype** a quick idea | `/fullstack-idea --quick` |
+| **Validate** if an idea is feasible | `/ralph-idea` |
+| **Execute** a task list (task.md) | `/ralph` |
+| **Plan complex changes** (multi-perspective) | `/orchestrate` |
+| **Add a feature** to existing app | `/enhance` |
+| **Fix a bug** with root cause analysis | `/debug` |
+| **Ask a question** / explore options | `/brainstorm` |
+| **Run tests** suite | `/test` |
+| **Deploy** to production | `/deploy` |
 
-### ⚡ Quick Scenarios
+## 📋 Common Workflow Examples
 
-- **"I have a billion dollar app idea"** → `/fullstack-idea "Uber for cats"`
-- **"I need a landing page by tonight"** → `/fullstack-idea --quick "Landing page"`
-- **"This button is broken"** → `/debug "Submit button not working"`
-- **"How should I build this feature?"** → `/brainstorm "Best auth for B2B"`
-- **"Just do the work in task.md"** → `/ralph`
+### Scenario 1: Developing a New Product
 
-## 🧠 Architecture
+**Goal:** Build a production-ready SaaS from scratch.
 
-The system uses a **Phase-based Multi-Agent Architecture**:
+1. **Start:** `/fullstack-idea "AI-powered Gardening Assistant"`
+2. **Feasibility:** System analyzes idea (Go/No-Go).
+3. **Architecture:** Agents design database and API.
+4. **Tasks:** System generates `task.md`.
+5. **Execution:** Ralph Loop builds it step-by-step.
+6. **QA:** Security and Accessibility checks pass.
+7. **Result:** Fully working application.
 
-1. **Codebase Awareness**: Scans and understands existing project context.
-2. **Feasibility**: 3+ Agents (Product, Security, UX) validate the request.
-3. **Architecture**: Senior Architects design the solution.
-4. **Task Generation**: Atomic tasks are created in `task.md`.
-5. **Execution Loop**: The "Ralph" autonomous loop executes tasks one by one.
-6. **QA Gates**: Automated checks for Security, A11y, and Performance.
+### Scenario 2: Adding a Feature to Existing App
+
+**Goal:** Add a "User Dashboard" to an existing project.
+
+1. **Plan:** `/brainstorm "Best dashboard layout for B2B"`
+2. **Enhance:** `/enhance "Add user dashboard with charts"`
+3. **Verify:** `/test`
+4. **Deploy:** `/deploy`
+
+### Scenario 3: Rapid Prototyping
+
+**Goal:** Validate an idea in 1 hour.
+
+1. **Quick Start:** `/fullstack-idea --quick "Landing page for Cat Cafe"`
+2. **Result:** Deployed landing page ready for traffic.
 
 ---
 *Built with ❤️ by Norbert Barna*
