@@ -1,4 +1,4 @@
-# 🚀 Antigravity Agentic System
+# 🚀 Multi Agentic System
 
 **Created by Norbert Barna**
 
