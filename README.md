@@ -110,12 +110,28 @@ This kit is fully compatible with standard Claude Code (CLI).
 /ralph
 ```
 
-### 🔍 Quality & Maintenance
+## 🎮 Command Board: When to Use What
 
-- **/debug**: Fix bugs with root cause analysis.
-- **/test**: Run test suites.
-- **/seo**: Generate high-ranking content.
-- **/brainstorm**: Analyze options for difficult decisions.
+| Goal | Command | Est. Time | Quality |
+|------|---------|-----------|---------|
+| **create a new product** from scratch | `/fullstack-idea` | 2-5 days | ⭐⭐⭐⭐⭐ |
+| **prototype** a quick idea | `/fullstack-idea --quick` | 2-8 hours | ⭐⭐⭐ |
+| **validate** if an idea is feasible | `/ralph-idea` | 10 mins | ⭐⭐⭐⭐ |
+| **execute** a task list (task.md) | `/ralph` | varies | varies |
+| **plan complex changes** (multi-perspective) | `/orchestrate` | 30 mins | ⭐⭐⭐⭐⭐ |
+| **add a feature** to existing app | `/enhance` | 1-4 hours | ⭐⭐⭐ |
+| **fix a bug** with root cause analysis | `/debug` | 15-30 mins | ⭐⭐⭐⭐ |
+| **ask a question** / explore options | `/brainstorm` | 5 mins | ⭐⭐⭐ |
+| **run tests** suite | `/test` | 5 mins | ⭐⭐⭐ |
+| **deploy** to production | `/deploy` | 10 mins | ⭐⭐⭐ |
+
+### ⚡ Quick Scenarios
+
+- **"I have a billion dollar app idea"** → `/fullstack-idea "Uber for cats"`
+- **"I need a landing page by tonight"** → `/fullstack-idea --quick "Landing page"`
+- **"This button is broken"** → `/debug "Submit button not working"`
+- **"How should I build this feature?"** → `/brainstorm "Best auth for B2B"`
+- **"Just do the work in task.md"** → `/ralph`
 
 ## 🧠 Architecture
 
