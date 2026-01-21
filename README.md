@@ -54,6 +54,21 @@ chmod +x /path/to/your/project/scripts/*.sh
 
 Open your project in Claude Code and type `/status`.
 
+## 🤖 Usage with Claude Code
+
+This kit is fully compatible with standard Claude Code (CLI).
+
+1. **Ensure `CLAUDE.md` is in your project root** (automatically included in this kit).
+2. **Start Claude Code**:
+
+    ```bash
+    claude
+    ```
+
+3. **Run commands**:
+    The `CLAUDE.md` file teaches standard Claude how to understand Antigravity commands.
+    Just type `/fullstack-idea` or `/ralph` as normal.
+
 ## 🤖 Usage Guide
 
 ### 🚀 Creating New Products
