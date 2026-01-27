@@ -14,7 +14,7 @@ $ARGUMENTS
 
 ## Pipeline Overview
 
-```
+```text
 Research → Writer → Fact-Check → E-E-A-T → Humanizer → SEO Polish
 ```
 
@@ -32,7 +32,7 @@ Each agent has a specific role:
 ## Configuration Files
 
 | File | Purpose |
-|------|---------|
+| ---- | ------- |
 | `seo-content-engine/config.md` | Brand voice, approved stats, differentiators |
 | `seo-content-engine/content-status.md` | Article queue and link map |
 | `seo-content-engine/agents/*.md` | Individual agent prompts |
@@ -162,7 +162,7 @@ Before completing, verify:
 ## Commands
 
 | Command | Action |
-|---------|--------|
+| ------- | ------ |
 | `/seo` | Generate next queued article |
 | `/seo [topic]` | Generate article on specific topic |
 | `/seo status` | Show queue status |
@@ -171,7 +171,7 @@ Before completing, verify:
 
 ## Example Usage
 
-```
+```bash
 /seo
 → Picks next queued article from content-status.md
 

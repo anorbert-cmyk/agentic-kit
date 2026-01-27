@@ -16,7 +16,7 @@ This command handles production deployment with pre-flight checks, deployment ex
 
 ## Sub-commands
 
-```
+```bash
 /deploy            - Interactive deployment wizard
 /deploy check      - Run pre-deployment checks only
 /deploy preview    - Deploy to preview/staging
@@ -60,7 +60,7 @@ Before any deployment:
 
 ## Deployment Flow
 
-```
+```text
 ┌─────────────────┐
 │  /deploy        │
 └────────┬────────┘
@@ -138,18 +138,22 @@ Before any deployment:
 Build failed at step: TypeScript compilation
 
 ### Details
-```
+
+```text
 error TS2345: Argument of type 'string' is not assignable...
 ```
 
 ### Resolution
+
 1. Fix TypeScript error in `src/services/user.ts:45`
 2. Run `npm run build` locally to verify
 3. Try `/deploy` again
 
 ### Rollback Available
+
 Previous version (v1.2.2) is still active.
 Run `/deploy rollback` if needed.
+
 ```
 
 ---
@@ -157,7 +161,7 @@ Run `/deploy rollback` if needed.
 ## Platform Support
 
 | Platform | Command | Notes |
-|----------|---------|-------|
+| -------- | ------- | ----- |
 | Vercel | `vercel --prod` | Auto-detected for Next.js |
 | Railway | `railway up` | Needs Railway CLI |
 | Fly.io | `fly deploy` | Needs flyctl |
@@ -167,7 +171,7 @@ Run `/deploy rollback` if needed.
 
 ## Examples
 
-```
+```bash
 /deploy
 /deploy check
 /deploy preview

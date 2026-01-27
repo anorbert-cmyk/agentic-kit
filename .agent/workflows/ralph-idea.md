@@ -14,7 +14,7 @@ Analyze an idea's feasibility by scanning **all available Antigravity skills** a
 
 ### Phase 1: Idea Capture
 
-```
+```text
 Mi az ötleted? (1-2 mondat)
 Példa: "AI-powered competitor analysis tool for startups"
 ```
@@ -34,7 +34,7 @@ Példa: "AI-powered competitor analysis tool for startups"
 **Categorize skills by relevance:**
 
 | Category | Skills to Check |
-|----------|-----------------|
+| -------- | --------------- |
 | **Research** | UX Researcher, SEO Strategist, Research Idea Validator |
 | **Security** | AppSec Engineer, AI Security Engineer, WSTG Test Planner |
 | **Design** | UI Designer, Design System Guardian, Brand Guardian |
@@ -80,7 +80,7 @@ Based on skill analysis, here are the recommended phases:
 
 ### Phase 4: Decision Point
 
-```
+```text
 Feasibility analysis complete.
 
 Options:
@@ -97,7 +97,7 @@ Options:
 The workflow automatically maps idea keywords to skills:
 
 | Keyword | Skills to Load |
-|---------|----------------|
+| ------- | -------------- |
 | "AI", "LLM", "GPT" | AI Engineer, AI Security Engineer |
 | "web", "app", "dashboard" | Frontend Developer, UI Designer |
 | "API", "backend", "database" | Backend Architect, Database Design |
@@ -110,7 +110,7 @@ The workflow automatically maps idea keywords to skills:
 
 ## Usage
 
-```
+```bash
 /ralph-idea                       # Interactive mode
 /ralph-idea "AI fitness coach"    # Direct mode
 ```
@@ -120,7 +120,7 @@ The workflow automatically maps idea keywords to skills:
 ## Output
 
 | Deliverable | Location |
-|-------------|----------|
+| ----------- | -------- |
 | Feasibility Report | `docs/FEASIBILITY-{slug}.md` |
 | Skill Matrix | Inline in report |
 | Task Suggestions | Ready for `/ralph` |

@@ -2,6 +2,8 @@
 description: Activates the Ralph autonomous loop with Antigravity Kit integration.
 ---
 
+# /ralph - Autonomous Loop Activation
+
 1. [ ] **Load Context**:
    - Read the `.agent` directory to see available tools.
    - Read `~/.gemini/skills/engineering/ralph/SKILL.md`.
