@@ -11,6 +11,7 @@ This is a complete, enterprise-grade AI Agent orchestration system designed for 
 - **Quality Gates**: Enforced standards for OWASP Security, WCAG 2.2 Accessibility, Core Web Vitals, and SEO.
 - **Atomic Task Execution**: The "Ralph Loop" for autonomous, step-by-step implementation.
 - **Dynamic Skill Loading**: Loads only the necessary context for each phase of development.
+- **Self-Correcting Content Pipeline**: Autonomous content generation that audits and improves itself until it meets quality standards (`/content-loop`).
 
 ## 📦 Contents
 
@@ -103,6 +104,12 @@ This kit is fully compatible with standard Claude Code (CLI).
 /orchestrate "Plan frontend migration"
 ```
 
+**Autonomous Content Production**
+
+```bash
+/content-loop path/to/draft.md "target keyword"
+```
+
 **Executing Tasks**
 
 ```bash
@@ -124,6 +131,7 @@ This kit is fully compatible with standard Claude Code (CLI).
 | **Ask a question** / explore options | `/brainstorm` |
 | **Run tests** suite | `/test` |
 | **Deploy** to production | `/deploy` |
+| **Optimize Content** (Auto-Loop) | `/content-loop` |
 
 ## 📋 Common Workflow Examples
 
