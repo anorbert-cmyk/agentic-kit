@@ -18,7 +18,7 @@ This is a complete, enterprise-grade AI Agent orchestration system designed for 
 - **Workflows (`.agent/workflows`)**: The command definitions (`/fullstack-idea`, `/ralph`, etc.).
 - **Skills (`.agent/skills`)**: Project-specific skills.
 - **Global Skills (`gemini-skills/`)**: The core knowledge base (must be installed globally).
-- **Scripts (`scripts/`)**: Utility scripts for automation (Ralph Loop, QA checks).
+- **Scripts (`scripts/`)**: Utility scripts for automation (Ralph Loop, Content Loop, QA checks).
 
 ## 🛠️ Installation
 
@@ -108,6 +108,10 @@ This kit is fully compatible with standard Claude Code (CLI).
 
 ```bash
 /content-loop path/to/draft.md "target keyword"
+```
+
+*See full guide: [docs/content-loop.md](docs/content-loop.md)*
+
 ```
 
 **Executing Tasks**
